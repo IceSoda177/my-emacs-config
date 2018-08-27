@@ -39,9 +39,9 @@
 
 ;; Package: volatile-highlights
 ;; GROUP: Editing -> Volatile Highlights
-(use-package volatile-highlights
-  :init
-  (volatile-highlights-mode t))
+;;(use-package volatile-highlights
+  ;;:init
+  ;;(volatile-highlights-mode t))
 
 ;; Package: undo-tree
 ;; GROUP: Editing -> Undo -> Undo Tree
@@ -49,6 +49,8 @@
   :init
   (global-undo-tree-mode 1))
 
+;; Show line number
+(global-linum-mode t)
 
 ;; Package: yasnippet
 ;; GROUP: Editing -> Yasnippet

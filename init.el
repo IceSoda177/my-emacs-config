@@ -26,7 +26,7 @@
 (require 'setup-company)
 ;;(require 'setup-c)
 (require 'cquery)
-(setq cquery-executable "/home/dylan/Downloads/cquery/build/cquery")
+(setq cquery-executable "/usr/local/bin/cquery")
 (setq cquery-sem-highlight-method 'font-lock)
 ;; alternatively, (setq cquery-sem-highlight-method 'overlay)
 
@@ -42,8 +42,6 @@
   :commands lsp-cquery-enable
   :init (add-hook 'c-mode-hook #'cquery//enable)
   (add-hook 'c++-mode-hook #'cquery//enable))
-(require 'lsp-imenu)
-(add-hook 'lsp-after-open-hook 'lsp-enable-imenu)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -59,7 +57,7 @@
      ("gnu" . "http://elpa.emacs-china.org/gnu/"))))
  '(package-selected-packages
    (quote
-    (company-lsp cquery projectile helm counsel-projectile counsel ivy back-button ace-jump-mode projectile-speedbar helm-ag ag helm-core helm-gtags helm-projectile xah-find lsp-clangd company-irony irony flycheck-rtags company company-rtags rtags use-package)))
+    (highlight-symbol ivy-xref company-lsp cquery projectile helm counsel-projectile counsel ivy back-button ace-jump-mode projectile-speedbar helm-ag ag helm-core helm-gtags helm-projectile xah-find lsp-clangd company-irony irony flycheck-rtags company company-rtags rtags use-package)))
  '(projectile-enable-caching t)
  '(projectile-globally-ignored-directories
    (quote

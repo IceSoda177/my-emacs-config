@@ -24,7 +24,7 @@
 (require 'setup-ivy-counsel)
 (require 'setup-editing)
 (require 'setup-company)
-;;(require 'setup-c)
+(require 'setup-c)
 (require 'cquery)
 (setq cquery-executable "/usr/local/bin/cquery")
 (setq cquery-sem-highlight-method 'font-lock)
